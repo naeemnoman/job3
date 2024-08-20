@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/yo"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="390dp"
+        android:layout_height="380dp"
+        android:background="#4DFFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/titleteLo"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="@+id/titleteLo"
+        app:layout_constraintTop_toBottomOf="@+id/titleteLo"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="48dp"
+        android:src="@drawable/pic"
+        app:layout_constraintEnd_toEndOf="@+id/titleteLo"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/titleteLo"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:paddingLeft="115dp"
+        android:paddingRight="80dp"
+        android:text="Naeem Noman"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/titleteLo"
+        app:layout_constraintTop_toBottomOf="@+id/titleteLo" />
+
+
+    <TextView
+        android:id="@+id/gmailEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="90dp"
+        android:paddingRight="80dp"
+        android:text="naeemnoman@gmail.com"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleteLo"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="@+id/titleteLo"
+        app:layout_constraintTop_toBottomOf="@+id/titleteLo" />
+
+    <TextView
+        android:id="@+id/forgotEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingRight="110dp"
+        android:text="Forgot your password"
+        android:textColor="#26032F"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button_apple"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/button_apple"
+        app:layout_constraintTop_toBottomOf="@+id/button_apple" />
+
+    <Button
+        android:id="@+id/button_apple"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:backgroundTint="#B11BAF"
+        android:gravity="center"
+        android:text="Continue"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/titleteLo"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="@+id/titleteLo"
+        app:layout_constraintTop_toBottomOf="@+id/titleteLo" />
+
+    <TextView
+        android:id="@+id/titleteLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:paddingLeft="15dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleteLo"
+        app:layout_constraintTop="@id/passwordLo"
+        tools:layout_editor_absoluteY="292dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter the password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
